@@ -3,22 +3,104 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(217, 227, 248, 0.521)), url('bg1.webp');    
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+  }
+/*header*/
 header{
     background-color: aquamarine;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
-    
 }
+.img-div{
+    width: 10vw;
+}
+
 .h-right{
     display: flex;
     align-items: center;
     
 }
-h1{
+.h-right h3,.h-left h3{
     margin:  15px;
 }
 .h-left{
     display: flex;
     align-items: center;
 }
+i{
+    font-size: 2em;
+}
+/* main section */
+section#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.main-left{
+    width: 50%;
+    height: 100%;       
+    background: lightblue;
+}
+.main-right{
+    margin-left: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.main-right button{
+    width: 25%;
+}
+/* certificate */
+#cert{
+    height: 30vh;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#cert .item{
+    background: white;
+    display: flex;
+    align-items: center;
+
+}
+.item i{
+    display: inline;
+}
+/* best selling */
+#bselling{
+    height: 100vh;
+    width: 100%;
+}
+.bs-top{
+    height: 40%;
+    width: 100%;
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+    padding-top: 15vh;
+}
+.bs-btm{
+    display: flex;
+    justify-content: space-around;
+}
+.bs-product{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgba(216, 213, 213, 0.473);
+}
+.bs-product img{
+    width: 80%;
+}
+#jleaf{
+
+}
+/* catagory */
