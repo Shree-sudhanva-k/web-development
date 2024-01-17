@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: aquamarine;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.h-right{
+    display: flex;
+    align-items: center;
+    
+}
+h1{
+    margin:  15px;
+}
+.h-left{
+    display: flex;
+    align-items: center;
+}
