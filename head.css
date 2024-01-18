@@ -104,3 +104,18 @@ section#main{
 
 }
 /* catagory */
+#catagory{
+    height: 100vh;
+    width: 100%;
+}
+#catagory h1{
+    margin: 10% auto;
+    text-align:center ;
+}
+.cat-itm{
+    display: flex;
+    justify-content: space-around;
+}
+.cat-itm-ls{
+    width: 28%;
+}
