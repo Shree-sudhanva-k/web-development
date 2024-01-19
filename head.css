@@ -8,7 +8,7 @@ body {
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed;
-  }
+  } 
 /*header*/
 header{
     background-color: aquamarine;
@@ -47,7 +47,8 @@ section#main{
     background: lightblue;
 }
 .main-right{
-    margin-left: 10%;
+    margin-left: 5%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction:column;
@@ -101,12 +102,17 @@ section#main{
     width: 80%;
 }
 #jleaf{
-
+    position:absolute;
+    right: 45%;
+    
+    
+    
 }
 /* catagory */
 #catagory{
     height: 100vh;
     width: 100%;
+    background-color: rgba(233, 173, 95, 0.534);
 }
 #catagory h1{
     margin: 10% auto;
@@ -118,4 +124,41 @@ section#main{
 }
 .cat-itm-ls{
     width: 28%;
+    text-align: center;
+    
+}
+/* review */
+#review{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.rev-top{
+    margin: 10% auto;
+}
+.rev-bottom{
+    display: flex;
+    align-items: last baseline;
+}
+.rev-btm-1{
+    margin: 5% 5%;
+    max-width: 20%;
+    background-color:rgba(0, 0, 0, 0.438) ;
+}
+/* footer */
+footer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+.f-top{
+    height:80%;
+    width: 80%;
+    margin:0 10%;
+    border-bottom: 2px solid rgb(196, 196, 196);
+
+}
+.f-bottom{
+    height: 20%;
+    width: 100%;
 }
