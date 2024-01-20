@@ -156,7 +156,30 @@ footer{
     width: 80%;
     margin:0 10%;
     border-bottom: 2px solid rgb(196, 196, 196);
+    display: flex;
 
+}
+.f-top-l{
+    height: 100%;
+    width: 40%;
+    background: gray;
+}
+.f-top-l h1{
+    height:30%;
+    background-color:papayawhip ;
+    text-align: center;
+}
+
+.f-top-m{
+    width: 25%;
+    padding:4% 4%;
+
+}
+.foot-link li{
+    list-style-type:none ;
+}
+.f-top-r{
+    width: 35%;
 }
 .f-bottom{
     height: 20%;
