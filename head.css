@@ -20,13 +20,19 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.img-div{
-   height: 10vh;
-    width: 15vw;
+.h-img-div{
+   height: 150px;
+   width:230px;
+    background-image: url('pic2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .h-right{
+    
     display: flex;
+    align-items: center;
+    justify-content: center;
     
     
 }
@@ -63,9 +69,7 @@ header .search{
     display: flex;
     
 }
-i{
-    
-}
+
 /* main section */
 section#main{
     width: 100vw;
@@ -99,10 +103,13 @@ section#main{
 }
 #cert .item{
     height: 19vh;
+    width: 20%;
     background: rgb(182, 212, 161);
     display: flex;
     align-items: center;
     border-radius: 10%;
+    justify-content: center;
+    
 
 }
 .item i{
@@ -143,13 +150,17 @@ section#main{
     
 }
 .bs-product img{
-    width: 80%;
+    height: 100%;
+    width: 60%;
+    
 }
 #jleaf{
-
+    position:absolute;
+    right: 45%;
+    bottom:-50px;
+    
+    
 }
-
-
 /* catagory */
 #catagory{
     height: 100vh;
@@ -171,4 +182,64 @@ section#main{
 }
 .cat-itm-ls{
     width: 28%;
+    text-align: center;
+    
+}
+/* review */
+#review{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.rev-top{
+    margin: 10% auto;
+}
+.rev-bottom{
+    display: flex;
+    align-items: last baseline;
+}
+.rev-btm-1{
+    margin: 5% 5%;
+    max-width: 20%;
+    background-color:rgba(0, 0, 0, 0.438) ;
+}
+/* footer */
+footer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+.f-top{
+    height:80%;
+    width: 80%;
+    margin:0 10%;
+    border-bottom: 2px solid rgb(196, 196, 196);
+    display: flex;
+   
+
+}
+.f-top-l{
+    height: 100%;
+    width: 40%;
+    background: gray;
+}
+.f-top-l h1{
+    height:30%;
+    background-color:papayawhip ;
+    text-align: center;
+}
+
+.f-top-m{
+    width: 25%;
+    padding:4% 4%;
+
+}
+
+
+.f-top-r{
+    width: 35%;
+}
+.f-bottom{
+    height: 20%;
+    width: 100%;
 }
