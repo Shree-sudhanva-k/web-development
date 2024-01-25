@@ -8,6 +8,9 @@ body {
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed;
+  } 
+  li{
+    list-style-type: none;
   }
 /*header*/
 header{
@@ -15,6 +18,7 @@ header{
     height: 15vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .img-div{
    height: 10vh;
@@ -23,18 +27,44 @@ header{
 
 .h-right{
     display: flex;
-    align-items: center;
+    
     
 }
-.h-right h3,.h-left h3{
+.h-right h3 a,.h-left h3 a{
     margin:  15px;
+    color: black;
+    text-decoration: none;
 }
+header .search{
+    height: 40%;
+    width:20%;
+    background-color: white;
+    padding: 0 1%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 14px;
+}
+.search input{
+    height: 60%;
+    
+    flex-grow: 0.8;
+    border: none;
+    border-right: 1px solid black;
+    
+    
+}
+.search i{
+    margin: auto;
+    font-size: 1.5em;
+}
+
 .h-left{
     display: flex;
-    align-items: center;
+    
 }
 i{
-    font-size: 2em;
+    
 }
 /* main section */
 section#main{
@@ -48,7 +78,8 @@ section#main{
     background: rgb(251, 250, 248);
 }
 .main-right{
-    margin-left: 10%;
+    margin-left: 5%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction:column;
@@ -81,6 +112,7 @@ section#main{
 #bselling{
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 .bs-top{
     height: 40%;
@@ -111,9 +143,10 @@ section#main{
     
 }
 .bs-product img{
-    height: 100%;
-    width: 60%;
-    
+    width: 80%;
+}
+#jleaf{
+
 }
 
 
@@ -121,9 +154,10 @@ section#main{
 #catagory{
     height: 100vh;
     width: 100%;
+    background-color: rgba(233, 173, 95, 0.534);
 }
 #catagory h1{
-    margin: 10% auto;
+    padding: 7%  0%;
     text-align:center ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: oblique;
@@ -137,8 +171,4 @@ section#main{
 }
 .cat-itm-ls{
     width: 28%;
-    border-radius: 60%;
-}
-img{
-    border-radius: 10%;
 }
