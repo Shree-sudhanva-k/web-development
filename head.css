@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&family=Rubik+Burned&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -21,8 +24,8 @@ header{
     align-items: center;
 }
 .h-img-div{
-   height: 150px;
-   width:230px;
+   height: 180px;
+   width:250px;
     background-image: url('pic2.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -88,6 +91,7 @@ section#main{
     display: flex;
     flex-direction:column;
     justify-content: center;
+    font-family: 'Rubik Burned', system-ui;
 }
 .main-right button{
     width: 25%;
@@ -95,7 +99,7 @@ section#main{
 /* certificate */
 #cert{
     height: 30vh;
-    background: #6d836e;
+    background: #525B88;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -104,7 +108,7 @@ section#main{
 #cert .item{
     height: 19vh;
     width: 20%;
-    background: rgb(182, 212, 161);
+    background: #BFA8BB;
     display: flex;
     align-items: center;
     border-radius: 10%;
