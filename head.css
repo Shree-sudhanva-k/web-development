@@ -126,7 +126,7 @@ section#main{
     position: relative;
 }
 .bs-top{
-    height: 40%;
+    height: 30%;
     width: 100%;
     display:flex;
     flex-direction:column ;
@@ -142,20 +142,24 @@ section#main{
 .bs-btm{
     display: flex;
     justify-content: space-around;
+    height:60%;
+    width: 100%;
 }
 .bs-product{
     display: flex;
     flex-direction:column;
     align-items: center;
+    justify-content: center;
     background-color: rgba(216, 213, 213, 0.473);
     align-content: space-evenly;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    width: 20%;
     
 }
 .bs-product img{
-    height: 100%;
-    width: 60%;
+    height: 60%;
+    width: 75%;
+   
     
 }
 #jleaf{
