@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&family=Rubik+Burned&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=PT+Serif:ital,wght@1,700&family=Rubik+Burned&display=swap');
 
 *{
     margin: 0;
@@ -91,11 +91,13 @@ section#main{
     display: flex;
     flex-direction:column;
     justify-content: center;
-    font-family: 'Rubik Burned', system-ui;
+    font-family: 'Merriweather', serif;
 }
 .main-right button{
     width: 25%;
+
 }
+
 /* certificate */
 #cert{
     height: 30vh;
@@ -191,7 +193,10 @@ section#main{
 .cat-itm-ls{
     width: 28%;
     text-align: center;
-    
+}
+.cat-itm-ls img{
+    height: 60%;
+    width: 90%;
 }
 /* review */
 #review{
