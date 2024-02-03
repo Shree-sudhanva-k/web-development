@@ -249,11 +249,11 @@ section#main{
     text-align: center;
 }
 .rev-top{
-    margin: 10% auto;
+    margin: 7% auto 0% auto;
 }
 .rev-bottom{
     display: flex;
-    align-items: last baseline;
+    align-items: first baseline;
 }
 .rev-btm-1{
     margin: 5% 5%;
