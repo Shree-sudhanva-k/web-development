@@ -115,10 +115,7 @@ section#main{
     font-size: 3em;
     margin: 5% 0%;
 }
-.main-right button{
-    width: 25%;
 
-}
 
 /* certificate */
 #cert{
@@ -202,26 +199,49 @@ section#main{
     background-color: rgba(233, 173, 95, 0.534);
 }
 #catagory h1{
-    padding: 7%  0%;
+    padding: 5%  0%;
     text-align:center ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: oblique;
     font-weight: 500;
     font-size: 60px;
     color: rgb(17, 17, 17);
+    
 }
 .cat-itm{
     display: flex;
     justify-content: space-around;
+    height:60%;
 }
 .cat-itm-ls{
     width: 28%;
     text-align: center;
+    background: white;
+    padding: 20px 30px;
+   
 }
 .cat-itm-ls img{
-    height: 60%;
-    width: 90%;
+    width: 80%;
+    
 }
+.cat-itm-ls h2{
+    font-family: 'Merriweather',serif;font-size: 1.5em;
+}
+.cat-itm-ls h3{
+    font-weight: 100;
+    font-size: 0.9em;
+    margin: 5% 0%;
+}
+.cat-itm-ls button{
+    width: 40%;
+    height:7.5%;
+    background-color: #6fda61;
+    border: none;
+    border-radius: 5px;
+    font-weight: 520;
+}
+
+
 /* review */
 #review{
     height: 100vh;
@@ -253,8 +273,9 @@ footer{
     margin:0 10%;
     border-bottom: 2px solid rgb(196, 196, 196);
     display: flex;
-   
-
+}
+.f-top h2{
+    color: #BFA8BB;
 }
 .f-top-l{
     height: 100%;
@@ -281,7 +302,11 @@ footer{
 
 .f-top-r{
     width: 35%;
-    margin-top:7%;
+    margin-top: 7%;
+    
+}
+.f-top-r div{
+    margin-bottom: 7% ;
 }
 .f-bottom{
     height: 20%;
