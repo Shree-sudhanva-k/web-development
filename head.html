@@ -43,7 +43,7 @@
         <div class="item">
             <i class="fa-solid fa-truck"></i>
             <div>
-                <h2>free shoping</h2>
+                <h2>free shipping</h2>
                 <h3>above 500 only</h3>
             </div>
         </div>
@@ -113,18 +113,18 @@
     <section id="catagory">
         <h1><u>Main Category</u></h1>
         <div class="cat-itm">
-            <div class="cat-itm-ls">
+            <a href="veggies.html" class="cat-itm-ls" onclick="localStorage.setItem('category','fruits')">
                 <h2>farm fresh fruits</h2>
                 <h3>Pure, flavorful farm-fresh fruits, a taste of nature's vibrant essence.</h3>
                 <button>SHOP NOW<i class="fa-solid fa-arrow-right"></i></button>
                 <img src="mixedfruit.png" alt="">
-            </div>
-            <div class="cat-itm-ls">
+            </a>
+            <a href="veggies.html" onclick="localStorage.setItem('category','vegetables')" class="cat-itm-ls">
                 <h2>Fresh Vegetables</h2>
                 <h3>Vibrant, nutrient-packed vegetables: nature's palette for wholesome, healthy living.</h3>
                 <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
                 <img src="mixveg.png" alt="" height="275px">
-            </div>
+            </a>
             <div class="cat-itm-ls">
                 <h2>Crunchy Snacks</h2>
                 <h3>
@@ -202,6 +202,7 @@
             <p>Copyright © 2024 | Feild2Door</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="mainPageBackend.js"></script>
 </body>
 </html>
