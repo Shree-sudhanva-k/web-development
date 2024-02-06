@@ -22,7 +22,7 @@ function fetchUserData(email){
 function signOut(){
   localStorage.setItem('name','Login');
   localStorage.setItem('email','');
-  window.location.href = 'index.html';
+  window.location.href = 'head.html';
 }
 
 function deleteAccount(){

@@ -17,13 +17,13 @@
             <h3><a href="#review" target="_blank">review</a></h3>
         </div>
         <div class="search">
-            <input type="text" placeholder="Search..">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="Search.." id="searchText">
+            <button onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="h-left">
             <h3><a href="#">about us</a></h3>
             <h3><a href="#"><i class="fa-solid fa-cart-arrow-down"></i> </a></h3>
-            <h3><a id="account" href="login.html">login</a></h3>
+            <h3><a id="account" onclick="accNavigate()">login</a></h3>
         </div>
 
     </header>
@@ -202,5 +202,6 @@
             <p>Copyright © 2024 | Feild2Door</p>
         </div>
     </footer>
+    <script src="mainPageBackend.js"></script>
 </body>
 </html>
