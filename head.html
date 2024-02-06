@@ -17,13 +17,13 @@
             <h3><a href="#review" target="_blank">review</a></h3>
         </div>
         <div class="search">
-            <input type="text" placeholder="Search..">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="Search.." id="searchText">
+            <button onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="h-left">
             <h3><a href="#">about us</a></h3>
             <h3><a href="#"><i class="fa-solid fa-cart-arrow-down"></i> </a></h3>
-            <h3><a href="login.html">login</a></h3>
+            <h3><a id="account" onclick="accNavigate()">login</a></h3>
         </div>
 
     </header>
@@ -43,7 +43,7 @@
         <div class="item">
             <i class="fa-solid fa-truck"></i>
             <div>
-                <h2>free shoping</h2>
+                <h2>free shipping</h2>
                 <h3>above 500 only</h3>
             </div>
         </div>
@@ -113,18 +113,18 @@
     <section id="catagory">
         <h1><u>Main Category</u></h1>
         <div class="cat-itm">
-            <div class="cat-itm-ls">
+            <a href="veggies.html" class="cat-itm-ls" onclick="localStorage.setItem('category','fruits')">
                 <h2>farm fresh fruits</h2>
                 <h3>Pure, flavorful farm-fresh fruits, a taste of nature's vibrant essence.</h3>
                 <button>SHOP NOW<i class="fa-solid fa-arrow-right"></i></button>
                 <img src="mixedfruit.png" alt="">
-            </div>
-            <div class="cat-itm-ls">
+            </a>
+            <a href="veggies.html" onclick="localStorage.setItem('category','vegetables')" class="cat-itm-ls">
                 <h2>Fresh Vegetables</h2>
                 <h3>Vibrant, nutrient-packed vegetables: nature's palette for wholesome, healthy living.</h3>
                 <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
                 <img src="mixveg.png" alt="" height="275px">
-            </div>
+            </a>
             <div class="cat-itm-ls">
                 <h2>Crunchy Snacks</h2>
                 <h3>
@@ -202,5 +202,7 @@
             <p>Copyright © 2024 | Feild2Door</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="mainPageBackend.js"></script>
 </body>
 </html>
