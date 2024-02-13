@@ -38,3 +38,16 @@ export const productDetailsDisplay = (req,res) =>{
     }
   });
 }
+
+export const searchDisplay = (req,res) =>{  
+  
+  db.query('select * from products where name = ? or category = ?',[req.query.text,req.query.text], (err, result) => {
+    if (err) {
+      console.error("MySQL query error:", err);
+      res.status(500).send("Error fetching data from database");
+    } else {
+      console.log(result);
+      res.json(result);
+    }
+  });
+}
