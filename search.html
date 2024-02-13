@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>      
+        <div class="search">
+            <input type="text" placeholder="Search.." id="searchText">
+            <button onclick="displayOnSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+
+    <div class="product-container"></div>
+
+    <template class="template">
+        <div class="product">
+            <h2 class="name"></h2>
+            <div class="desc"></div>
+        </div>
+    </template>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

@@ -15,6 +15,6 @@ window.onload = function() {
 
 function handleSearch(){
     const searchText = document.getElementById('searchText').value;
-    localStorage.setItem('category',searchText);
-    window.location.href = 'veggies.html';
+    localStorage.setItem('searchText',searchText);
+    window.location.href = 'search.html';
 }
