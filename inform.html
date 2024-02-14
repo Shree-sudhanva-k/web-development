@@ -25,10 +25,10 @@
   <section id="pf">
     <h1>Upload your product here!</h1>
     <label for="pname">Product Name: </label>
-    <input type="text" id="pname" placeholder="eg.Tomato....">
+    <input type="text" id="pname" placeholder="eg.Onion....">
     <br>
-    <label for="pcatg">Product Catogary: </label>
-    <input type="text" id="pcatg" placeholder="eg.Fruits....">
+    <label for="pcatg">Product Category: </label>
+    <input type="text" id="pcatg" placeholder="eg.vegetables....">
     <br>
     <label for="pprice">Price: </label>
     <input type="number" id="pprice">
@@ -45,6 +45,8 @@
     <input type="file" accept="image/*" id="pic1">
     
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="inform.js"></script>
   <script>
     let inputfile = document.getElementById("pic1");
     let fileLabel = document.getElementById("file");

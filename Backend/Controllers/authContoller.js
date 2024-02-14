@@ -33,12 +33,14 @@ export const login = (req, res) => {
     [values[0]],
     (selectErr, selectResults) => {
       if (selectErr) {
+        console.log(selectErr)
         console.error("Error checking user existence:", selectErr);
         return res.status(500).json({ error: "Internal Server Error" });
       }
 
       // If a user with the given email already exists, return an error
       if (selectResults.length == 0) {
+        console.log('doesnotexists');
         return res
           .status(400)
           .json({ error: "User with this email doesnot exists" });
@@ -47,6 +49,7 @@ export const login = (req, res) => {
       const user = selectResults[0];
 
       if (values[1] != user.password) {
+        console.log('incorrectpass')
         return res.status(401).json({ error: "Incorrect password" });
       }
       return res
