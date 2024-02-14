@@ -213,6 +213,10 @@ section#main{
     justify-content: space-around;
     height:60%;
 }
+.cat-itm a{
+    color: black;
+    text-decoration: none;
+}
 .cat-itm-ls{
     width: 28%;
     text-align: center;
