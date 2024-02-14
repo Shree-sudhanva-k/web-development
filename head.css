@@ -270,7 +270,9 @@ h1{
 .rev-btm-1{
     margin: 5% 5%;
     max-width: 20%;
-    background-color:rgba(124, 238, 200, 0.438) ;
+    padding: 50px 30px;
+    background: #BFA8BB;
+    border-radius: 10%;
     
 }
 /* footer */
@@ -301,6 +303,7 @@ footer{
 }
 .f-top-l img{
     width:70%;
+    border-radius: 10%;
 }
 
 .f-top-m{
