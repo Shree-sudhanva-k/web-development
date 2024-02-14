@@ -17,11 +17,11 @@ function productDisplay(category) {
       items.forEach((item) => {
         console.log(template);
         const cardClone = template.content.cloneNode(true);
-        const productName = cardClone.querySelector(".product-name");
-        const productDesc = cardClone.querySelector(".product-desc");
+        const productName = cardClone.querySelector(".name");
+        const productDesc = cardClone.querySelector(".price");
 
         productName.innerHTML = item.name;
-        productDesc.innerHTML = item.description;
+        productDesc.innerHTML = item.price;
 
         
 
@@ -31,4 +31,10 @@ function productDisplay(category) {
     .catch((error) => {
       console.error("Error fetching data:", error);
     });
+}
+
+function handleSearch(){
+  const searchText = document.getElementById('searchText').value;
+  localStorage.setItem('searchText',searchText);
+  window.location.href = 'search.html';
 }

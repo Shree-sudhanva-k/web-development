@@ -85,7 +85,7 @@ header .search{
     
 }
 /* main section */
-section#main{
+section #main{
     width: 100vw;
     height:100vh;
     display:flex;
@@ -108,25 +108,33 @@ section#main{
     line-height: 1.3em;
     margin-bottom: 40px;
 }
+
+.product-section,.product-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 0 50px;
+    padding-top: 50px;
+}
 .token{
     height: 280px;
     width: 200px;
     border: 0.5px solid gray;
-    align-items:center ;
-    position: absolute;
-    padding: 20px 10px;
-    
+    align-items:center ;    
+    padding: 10px;
+    border-radius: 10px;   
 }
 .token img{
     align-items: center;
 }
-.token h3{
-    position: absolute;
+.token h3{    
     bottom: 10px;
     left: 15px;
 }
-.token button{
-    position: absolute;
+
+.token button{    
     bottom:10px;
     right: 15px;
     width: 60px;
@@ -134,4 +142,24 @@ section#main{
     font-weight: 500;
     border:1.5px solid rgb(65, 153, 65);
     color: rgb(65, 153, 65);
+}
+
+.heading{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.product-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.showingResults{
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 30px;    
 }

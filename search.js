@@ -21,10 +21,10 @@ function displayOnSearch(){
         console.log(template);
         const cardClone = template.content.cloneNode(true);
         const productName = cardClone.querySelector(".name");
-        const productDesc = cardClone.querySelector(".desc");
+        const productPrice = cardClone.querySelector(".price");
 
         productName.innerHTML = item.name;
-        productDesc.innerHTML = item.description;        
+        productPrice.innerHTML = item.price;        
 
         cardContainer.appendChild(cardClone);
       });

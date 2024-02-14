@@ -51,3 +51,4 @@ export const searchDisplay = (req,res) =>{
     }
   });
 }
+

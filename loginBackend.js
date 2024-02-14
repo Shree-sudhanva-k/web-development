@@ -25,6 +25,7 @@ function signup() {
 function login() {  
   const email = document.getElementById("lemail").value;
   const password = document.getElementById("lpassword").value;
+  console.log(email+password);
 
   axios
     .post(`${serverUrl}/login`, {      

@@ -6,25 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="head.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
     <header>
         <div class="h-right">
             <div class="h-img-div"></div>
             <h3><a href="#bselling">Best selling</a></h3>
-            <h3><a href="#catagory" target="_blank">category</a></h3>
-            <h3><a href="#review" target="_blank">review</a></h3>
+            <h3><a href="#catagory">category</a></h3>
+            <h3><a href="#review">review</a></h3>
         </div>
         <div class="search">
             <input type="text" placeholder="Search.." id="searchText">
             <button onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="h-left">
-            <h3><a href="#">Post</a></h3>
-            <h3><a href="#">Login</a></h3>
-            <!-- <h3><a href="#"><i class="fa-solid fa-cart-arrow-down"></i> </a></h3> -->
+            <h3><a href="inform.html">Post</a></h3>           
             <h3><a id="account" onclick="accNavigate()">login</a></h3>
+            <!-- <h3><a href="#"><i class="fa-solid fa-cart-arrow-down"></i> </a></h3> -->
         </div>
 
     </header>
@@ -126,12 +124,12 @@
                 <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
                 <img src="mixveg.png" alt="" height="275px">
             </a>
-            <div class="cat-itm-ls">
+            <a href="veggies.html" onclick="localStorage.setItem('category','dairy')" class="cat-itm-ls">
                 <h2>Dairy & more</h2>
                 <h3> Sip and savor the richness of our dairy delights</h3>
                 <button>SHOP NOW <i class="fa-solid fa-arrow-right"></i></button>
                 <img src="dairy.png" alt="" height="275px">
-            </div>
+            </a>
         </div>
     </section>
     <section id="review">
