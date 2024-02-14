@@ -38,7 +38,7 @@
     <br>
     <label for="p-stock-quant">Stock available: </label>
     <input type="number" id="p-stock-quant"><br><br>
-    <label for="discription">About Product</label>
+    <label for="discription">About Product</label><br>
     <textarea name="discription" id="discription" cols="30" rows="10" placeholder="Enter product discription here"></textarea>
 
     <label for="pic1" id="file"><i class="fa-solid fa-plus"></i></label>
@@ -52,6 +52,9 @@
     inputfile.onchange = function() {
  
     fileLabel.style.background = "url(" + URL.createObjectURL(inputfile.files[0]) + ")";
+    fileLabel.style.backgroundSize="contain"
+    fileLabel.style.color="#f5f5f500";
+    fileLabel.style.backgroundRepeat="no-repeat"
     };
 
 
