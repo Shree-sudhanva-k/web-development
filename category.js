@@ -21,9 +21,7 @@ function productDisplay(category) {
         const productDesc = cardClone.querySelector(".price");
 
         productName.innerHTML = item.name;
-        productDesc.innerHTML = item.price;
-
-        
+        productDesc.innerHTML = item.price;        
 
         cardContainer.appendChild(cardClone);
       });
@@ -37,4 +35,10 @@ function handleSearch(){
   const searchText = document.getElementById('searchText').value;
   localStorage.setItem('searchText',searchText);
   window.location.href = 'search.html';
+}
+
+function itemDetails(product){
+  const name = product.querySelector('#pname').innerHTML;
+  localStorage.setItem('itemName',name);
+  window.location.href = 'item.html';
 }

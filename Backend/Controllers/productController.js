@@ -28,7 +28,7 @@ export const productDisplay = (req,res) =>{
 }
 
 export const productDetailsDisplay = (req,res) =>{  
-  db.query('select * from products where name = ?',[req.query.product], (err, result) => {
+  db.query('select * from products where name = ?',[req.query.itemName], (err, result) => {
     if (err) {
       console.error("MySQL query error:", err);
       res.status(500).send("Error fetching data from database");
