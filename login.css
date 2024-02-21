@@ -6,14 +6,16 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	background: url("logic\ bg\ pic.jpeg");
+	background-size: cover;
+	box-sizing: border-box;
+	
 }
 .main{
 	width: 350px;
 	height: 500px;
-	background: red;
 	overflow: hidden;
-	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	background-color: rgba(0, 0, 0, 0.656);
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
@@ -65,18 +67,20 @@ button{
 	cursor: pointer;
 }
 button:hover{
-	background: #6d44b8;
+	background: #d6ac21;
 }
 .login{
 	height: 460px;
-	background: #eee;
+	background: rgb(50, 80, 50);
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
+	background-image: url("https://e0.pxfuel.com/wallpapers/761/393/desktop-wallpaper-leaf-background-background-aesthetic-leaf-thumbnail.jpg");
 	
 }
 .login label{
-	color: #573b8a;
+	color: #f6f6f6;
 	transform: scale(.6);
+	padding-top: 20px;
 }
 
 #chk:checked ~ .login{
