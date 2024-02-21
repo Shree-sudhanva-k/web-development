@@ -47,6 +47,7 @@ export const login = (req, res) => {
       }
 
       const user = selectResults[0];
+      console.log(user);
 
       if (values[1] != user.password) {
         console.log('incorrectpass')
@@ -54,7 +55,7 @@ export const login = (req, res) => {
       }
       return res
         .status(200)
-        .json({ success: true, user: { name: user.name, email: user.email } });
+        .json({ success: true, user: { name: user.username, email: user.email } });
     }
   );
 };

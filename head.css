@@ -178,6 +178,7 @@ section#main{
     grid-template-columns: auto auto auto;
     width: 20%;
     
+    
 }
 .bs-product img{
     height: 60%;
@@ -194,9 +195,10 @@ section#main{
 }
 /* catagory */
 #catagory{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: rgba(233, 173, 95, 0.534);
+    padding-bottom: 20px;
 }
 #catagory h1{
     padding: 5%  0%;
@@ -211,7 +213,8 @@ section#main{
 .cat-itm{
     display: flex;
     justify-content: space-around;
-    height:60%;
+    height:auto;
+
 }
 .cat-itm a{
     color: black;
@@ -222,7 +225,7 @@ section#main{
     text-align: center;
     background: white;
     padding: 20px 30px;
-   
+   border-radius: 20px;
 }
 .cat-itm-ls img{
     width: 80%;
@@ -245,13 +248,16 @@ section#main{
     font-weight: 520;
 }
 
+.bs-product img{
+    padding-bottom: 10px;
+}
+
 
 /* review */
 #review{
-    height: 100vh;
+    height: auto;
     width: 100%;
-    text-align: center;
-    
+    text-align: center;    
 }
 h1{
     font-size: 50px;
