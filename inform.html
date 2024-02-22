@@ -9,40 +9,36 @@
 
 </head>
 <body>
-  <header>
-    <div class="h-right">
-        <div class="h-img-div"></div>
-    </div>
-    <div class="search">
-        <input type="text" placeholder="Search.." id="searchText">
-        <button onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-    <div class="h-left">
-        <h3><a href="#"><i class="fa-solid fa-cart-arrow-down"></i> </a></h3>
-    </div>
-  </header>
+  
   <!-- profile form -->
   <section id="pf">
     <h1>Upload your product here!</h1>
-    <label for="pname">Product Name: </label>
-    <input type="text" id="pname" placeholder="eg.Onion....">
-    <br>
-    <label for="pcatg">Product Category: </label>
-    <input type="text" id="pcatg" placeholder="eg.vegetables....">
-    <br>
-    <label for="pprice">Price: </label>
-    <input type="number" id="pprice">
-    <br>
-    <label for="p-weight">Weight: </label>
-    <input type="number" id="p-weight">
-    <br>
-    <label for="p-stock-quant">Stock available: </label>
-    <input type="number" id="p-stock-quant"><br><br>
-    <label for="discription">About Product</label><br>
-    <textarea name="discription" id="discription" cols="30" rows="10" placeholder="Enter product discription here"></textarea>
-
-    <label for="pic1" id="file"><i class="fa-solid fa-plus"></i></label>
-    <input type="file" accept="image/*" id="pic1">
+    <div class="pf-btm">
+      <div class="pf-left">
+        <label for="pic1" id="file"><i class="fa-solid fa-plus"></i></label>
+        <input type="file" accept="image/*" id="pic1">
+      </div>
+      <div class="pf-right">
+        
+        <input type="text" id="pname" placeholder="product name">
+        
+        
+        <input type="text" id="pcatg" placeholder="category">
+        
+        
+        <input type="number" id="pprice" placeholder="price">
+        
+        
+        <input type="number" id="p-weight" placeholder="Weight">
+        
+        
+        <input type="number" id="p-stock-quant" placeholder="available stock">
+        
+        <textarea name="discription" id="discription" cols="10" rows="10" placeholder="product discription "></textarea>
+  
+        
+      </div>
+    </div>
     
   </section>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

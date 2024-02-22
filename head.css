@@ -15,10 +15,10 @@
 }
 }
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(217, 227, 248, 0.521)), url('bg1.webp');    
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(217, 227, 248, 0.521)), url('bg1.webp');    
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed;
   } 
 li{
     list-style-type: none;
@@ -29,7 +29,7 @@ li a{
   }
 /*header*/
 header{
-    background-color: rgb(201, 250, 150);
+    background-color:  rgb(201, 250, 150);
     height: 18vh;
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ header{
 .h-img-div{
     height: 100px;
    width:200px;
-    background-image: url('pic2.png');
+    background-image: url('pic2-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
