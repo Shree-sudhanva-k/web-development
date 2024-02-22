@@ -33,3 +33,9 @@ function displayOnSearch(){
       console.error("Error fetching data:", error);
     });
 }
+
+function itemDetails(product){
+    const name = product.getElementById('pname').innerHTML;
+    localStorage.setItem('itemName',name);
+    window.location.href = 'item.html';
+}

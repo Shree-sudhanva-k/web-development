@@ -34,9 +34,9 @@ function login() {
     })
     .then((response) => {
       console.log(response);
-      localStorage.setItem("name", response.user.name);
+      localStorage.setItem("name", response.data.user.name);
       localStorage.setItem("email", email);
-      window.location.href = "index.html";
+      window.location.href = "head.html";
     })
     .catch((error) => {
       document.querySelector(".error").innerHTML = error;
