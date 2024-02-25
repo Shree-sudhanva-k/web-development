@@ -1,4 +1,4 @@
-const serverUrl = "http://localhost:5500";
+const serverUrl = "http://localhost:8800";
 const email = localStorage.getItem('email')
 console.log(email)
 
@@ -8,11 +8,12 @@ window.addEventListener("load",fetchUserData(email));
 
 function fetchUserData(email){  
     axios
-    .get(`${serverUrl}/account/${email}`)
+    .get(`${serverUrl}/account?email=${email}`)
     .then((response) => {
       const items = response.data;
       console.log(items)
-      document.querySelector('.account').innerHTML = items[0].email;
+      document.querySelector('#p-name').innerHTML = items[0].username;
+      document.getElementById('email').innerHTML = items[0].email;
     })
     .catch((error) => {
       console.error("Error fetching data:", error);

@@ -4,13 +4,13 @@ function accNavigate(){
     window.location.href = 'login.html';
   }
   else{
-    window.location.href = 'account.html';
+    window.location.href = 'profile.html';
   }
 }
 
 window.onload = function() {
   const accountSpan = document.getElementById('account');
-  accountSpan.innerHTML = localStorage.getItem('name');
+  accountSpan.innerHTML = localStorage.getItem('name') == null ? 'Login' : localStorage.getItem('name');
 };
 
 function handleSearch(){
@@ -18,3 +18,4 @@ function handleSearch(){
     localStorage.setItem('searchText',searchText);
     window.location.href = 'search.html';
 }
+
