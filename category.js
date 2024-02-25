@@ -42,3 +42,29 @@ function itemDetails(product){
   localStorage.setItem('itemName',name);
   window.location.href = 'item.html';
 }
+
+const addItem = (event,item) => {
+  event.stopPropagation();
+  const itemCard = item.parentNode.parentNode;
+  const email = localStorage.getItem('email');
+  const productName = itemCard.querySelector('.name').innerHTML;
+  const quantity = (itemCard.querySelector('.quantity').innerHTML);
+  const price = (itemCard.querySelector('.price').innerHTML);
+  const totalPrice = quantity*price;
+  console.log(totalPrice);
+  axios
+    .post(`${serverUrl}/addItem`, {
+      email,
+      productName,
+      quantity,
+      price,
+      totalPrice
+    })
+    .then((response) => {
+      console.log(response);
+      
+    })
+    .catch((error) => {
+      console.log(error)
+    });
+}

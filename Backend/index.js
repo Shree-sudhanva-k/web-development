@@ -4,6 +4,7 @@ import cors from "cors";
 import authRouter from './Routes/auth.js'
 import productRouter from './Routes/product.js';
 import accountRouter from './Routes/account.js';
+import cartRouter from './Routes/cart.js';
 import cloudinary from 'cloudinary';
 
 const app = express();
@@ -20,6 +21,7 @@ app.use(cors());
 app.use(authRouter);
 app.use(productRouter);
 app.use(accountRouter);
+app.use(cartRouter);
 
 cloudinary.config({
   cloud_name: 'dw1bfqu2k',

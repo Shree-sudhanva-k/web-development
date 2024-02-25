@@ -12,8 +12,7 @@ window.onload = function() {
   const accountSpan = document.getElementById('account');
   accountSpan.innerHTML = localStorage.getItem('name') == null ? 'Login' : localStorage.getItem('name');
   console.log(localStorage.getItem('role'));
-  if(localStorage.getItem("role") === 'customer'){
-    
+  if(localStorage.getItem("role") === 'customer'){    
     document.getElementById('post').style.display = 'none';
   }
   
@@ -24,4 +23,5 @@ function handleSearch(){
     localStorage.setItem('searchText',searchText);
     window.location.href = 'search.html';
 }
+
 
