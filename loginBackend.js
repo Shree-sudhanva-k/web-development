@@ -4,17 +4,21 @@ function signup() {
   const username = document.getElementById("sname").value;
   const email = document.getElementById("semail").value;
   const password = document.getElementById("spassword").value;
+  const role = document.querySelector('.role').value;
+  console.log(role)
 
   axios
     .post(`${serverUrl}/signup`, {
-      name: username,
+      username,
       email,
       password,
+      role,
     })
     .then((response) => {
       console.log(response);
       localStorage.setItem("name", username);
       localStorage.setItem("email", email);
+      localStorage.setItem("role",role);
       window.location.href = "head.html";
     })
     .catch((error) => {
@@ -33,9 +37,10 @@ function login() {
       password,
     })
     .then((response) => {
-      console.log(response);
+      console.log(response.data);
       localStorage.setItem("name", response.data.user.name);
       localStorage.setItem("email", email);
+      localStorage.setItem("role",response.data.user.role);
       window.location.href = "head.html";
     })
     .catch((error) => {

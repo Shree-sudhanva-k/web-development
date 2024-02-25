@@ -1,7 +1,7 @@
 import { db } from "../index.js";
 
 export const signup = (req, res) => {
-  const values = [req.body.name, req.body.email, req.body.password];
+  const values = [req.body.username, req.body.email, req.body.password,req.body.role];
   db.query(
     "SELECT * FROM users WHERE email = ?",
     [values[1]],
