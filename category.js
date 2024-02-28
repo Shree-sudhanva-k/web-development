@@ -68,3 +68,19 @@ const addItem = (event,item) => {
       console.log(error)
     });
 }
+
+function increment(event,item){
+  event.stopPropagation();
+  const itemCard = item.parentNode.parentNode;
+  itemCard.querySelector('.quantity').innerHTML = parseInt(itemCard.querySelector('.quantity').innerHTML)+1;
+  
+}
+
+function decrement(event,item){
+  event.stopPropagation();
+  const itemCard = item.parentNode.parentNode;
+  const quantity = itemCard.querySelector('.quantity').innerHTML;
+  if(quantity > 1){
+    itemCard.querySelector('.quantity').innerHTML = parseInt(quantity)-1;
+  }
+}

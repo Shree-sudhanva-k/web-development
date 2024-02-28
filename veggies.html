@@ -42,9 +42,9 @@
         <h3 id="amount" class="price">123.50</h3>
         <div class="product-bottom">
           <div class="addQuantity">
-            <span class="-">-</span>
+            <span class="-" onclick="decrement(event,this)">-</span>
             <span class="quantity">1</span>
-            <span class="+">+</span>
+            <span class="+" onclick="increment(event,this)">+</span>
           </div>
           <button class="add" onclick="addItem(event,this)">Add</button>
         </div>
