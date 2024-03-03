@@ -1,12 +1,12 @@
 import {db} from '../index.js'
 
 export const productInput = (req, res) => {
-  const { name, description, category, price, stock_quantity, weight } =
+  const { name, description, category, price, stock_quantity, weight,photo } =
     req.body;
 
   db.query(
-    "insert into products (name, description, category, price, stock_quantity, weight) values(?,?,?,?,?,?)",
-    [name, description, category, price, stock_quantity, weight],
+    "insert into products (name, description, category, price, stock_quantity, weight,photo) values(?,?,?,?,?,?,?)",
+    [name, description, category, price, stock_quantity, weight,photo],
     (err, data) => {
       if (err) return res.json(err);
       console.log("Successful");

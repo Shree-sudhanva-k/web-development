@@ -19,9 +19,11 @@ function productDisplay(category) {
         const cardClone = template.content.cloneNode(true);
         const productName = cardClone.querySelector(".name");
         const productDesc = cardClone.querySelector(".price");
+        const productImage = cardClone.querySelector(".productImage");
 
         productName.innerHTML = item.name;
-        productDesc.innerHTML = item.price;        
+        productDesc.innerHTML = item.price;  
+        productImage.src = item.photo;      
 
         cardContainer.appendChild(cardClone);
       });

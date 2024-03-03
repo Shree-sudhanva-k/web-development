@@ -16,7 +16,7 @@
     <div class="pf-btm">
       <div class="pf-left">
         <label for="pic1" id="file"><i class="fa-solid fa-plus"></i></label>
-        <input type="file" accept="image/*" id="pic1">
+        <input type="file" accept="image/*" id="pic1" onchange="handleFileInputChange(event)">
       </div>
       <div class="pf-right">
         
@@ -34,28 +34,14 @@
         
         <input type="number" id="p-stock-quant" placeholder="available stock">
         
-        <textarea name="discription" id="discription" cols="10" rows="10" placeholder="product discription "></textarea>
+        <textarea name="description" id="description" cols="10" rows="10" placeholder="product discription "></textarea>
   
-        
+        <button onclick="productInput()">Add Product</button>
       </div>
     </div>
     
   </section>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="inform.js"></script>
-  <script>
-    let inputfile = document.getElementById("pic1");
-    let fileLabel = document.getElementById("file");
-
-    inputfile.onchange = function() {
- 
-    fileLabel.style.background = "url(" + URL.createObjectURL(inputfile.files[0]) + ")";
-    fileLabel.style.backgroundSize="contain"
-    fileLabel.style.color="#f5f5f500";
-    fileLabel.style.backgroundRepeat="no-repeat"
-    };
-
-
-  </script>
+  <script src="inform.js"></script>  
 </body>
 </html>
