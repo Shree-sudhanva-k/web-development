@@ -1,0 +1,25 @@
+.product{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+}
+.p-left{
+    height: 100%;
+    width: 40%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-img{
+    height: 50%;
+    width: 80%;
+    background: black;
+
+}
+.p-right{
+    height: 100%;
+    width: 60%;
+    background: red;
+    
+}
