@@ -19,9 +19,11 @@ function productDisplay(category) {
         const cardClone = template.content.cloneNode(true);
         const productName = cardClone.querySelector(".name");
         const productDesc = cardClone.querySelector(".price");
+        const productImage = cardClone.querySelector(".productImage");
 
         productName.innerHTML = item.name;
-        productDesc.innerHTML = item.price;        
+        productDesc.innerHTML = item.price;  
+        productImage.src = item.photo;      
 
         cardContainer.appendChild(cardClone);
       });
@@ -67,4 +69,20 @@ const addItem = (event,item) => {
     .catch((error) => {
       console.log(error)
     });
+}
+
+function increment(event,item){
+  event.stopPropagation();
+  const itemCard = item.parentNode.parentNode;
+  itemCard.querySelector('.quantity').innerHTML = parseInt(itemCard.querySelector('.quantity').innerHTML)+1;
+  
+}
+
+function decrement(event,item){
+  event.stopPropagation();
+  const itemCard = item.parentNode.parentNode;
+  const quantity = itemCard.querySelector('.quantity').innerHTML;
+  if(quantity > 1){
+    itemCard.querySelector('.quantity').innerHTML = parseInt(quantity)-1;
+  }
 }

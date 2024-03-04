@@ -37,14 +37,14 @@
     <div class="product-section"></div>
     <template class="box product">
       <div class="token" onclick="itemDetails(this)">
-        <img src="banana.jpg" alt="product img" height="180px" width="170" />
+        <img src="" alt="product img" height="180px" width="170" class="productImage"/>
         <h2 id="pname" class="name">banana</h2>
         <h3 id="amount" class="price">123.50</h3>
         <div class="product-bottom">
           <div class="addQuantity">
-            <span class="-">-</span>
+            <span class="-" onclick="decrement(event,this)">-</span>
             <span class="quantity">1</span>
-            <span class="+">+</span>
+            <span class="+" onclick="increment(event,this)">+</span>
           </div>
           <button class="add" onclick="addItem(event,this)">Add</button>
         </div>
@@ -53,5 +53,6 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="category.js"></script>
     <script src="search.js"></script>
+    <script src="mainPageBackend.js"></script>
   </body>
 </html>
