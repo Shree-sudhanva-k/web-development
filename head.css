@@ -5,20 +5,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    ::selection {
-    background-color: lightgreen;
-    color: white;
+    
 }
 *::selection {
     background-color: rgb(89, 240, 89);
     color: white;
 }
-}
+
 body {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(217, 227, 248, 0.521)), url('bg1.webp');    
-        background-size: cover; 
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(217, 227, 248, 0.521)), url('bg1.jpg');    
+        background-size:cover; 
         background-position: center; 
         background-attachment: fixed;
+        font-size: 1rem;
+        width: 100vw;
   } 
 li{
     list-style-type: none;
@@ -62,7 +62,7 @@ header .search{
     background-color: white;
     padding: 0 1%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-radius: 14px;
 }
@@ -90,6 +90,24 @@ header .search{
     display: flex;
     
 }
+@media (max-width:1075px){
+    
+    body{
+        font-size: 0.9em;
+    }
+    .h-right h3{
+        display: none;
+    }
+    header{
+        height: 12vh;
+    }
+    header .search{
+        width: 30%;
+    }
+    .search input{
+        flex-grow: 0.7;
+    }
+}
 
 /* main section */
 section#main{
@@ -101,6 +119,16 @@ section#main{
     width: 50%;
     height: 100%;       
     background: rgb(251, 250, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-left img {
+    width: 80%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-right{
     margin-left: 5%;
@@ -115,38 +143,74 @@ section#main{
     font-size: 3em;
     margin: 5% 0%;
 }
+@media (max-width:1075px){
+    section#main{
+        display: inline-block;
+    }
+    .main-left{
+        width: 100%;
+        height: 50%;
+        
 
+    }
+    .main-left img{
+       height: 90%;
+       width: auto;
+
+    }
+    .main-right{
+        height: 50%;
+        width: 100%;
+        padding: 5%;
+    }
+}
 
 /* certificate */
 #cert{
     height: 30vh;
+    width: 100%;
     background: #525B88;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap:3%;
+    
+    
     
 }
 #cert .item{
     height: 19vh;
-    width: 20%;
+    min-width: 85%;
+    margin:auto ;
     background: #BFA8BB;
     display: flex;
     align-items: center;
     border-radius: 10%;
     justify-content: center;
-    
-
 }
 .item i{
     display: inline;
     font-size: 1.2em;
     margin-right: 5px;
 }
+@media (max-width:1000px){
+    #cert {
+        padding: 5%;
+        height:40vh;
+        display:grid;
+        grid-template-columns: auto auto ;
+        gap:20%; 
+    }
+    #cert .item{
+        min-width: 90%;
+        height: 90%;
+    }
+}
 /* best selling */
 #bselling{
-    height: 100vh;
+    height: max-content;
     width: 100%;
     position: relative;
+    padding-bottom: 10%;
 }
 .bs-top{
     height: 30%;
@@ -167,6 +231,7 @@ section#main{
     justify-content: space-around;
     height:60%;
     width: 100%;
+    padding-top: 5%;
 }
 .bs-product{
     display: flex;
@@ -175,24 +240,28 @@ section#main{
     justify-content: center;
     background-color: rgba(216, 213, 213, 0.473);
     align-content: space-evenly;
-    grid-template-columns: auto auto auto;
     width: 20%;
-    
-    
+    padding: 5% 0;
 }
 .bs-product img{
     height: 60%;
-    width: 75%;
-   
-    
+    width: 75%;  
 }
 #jleaf{
     position:absolute;
     right: 45%;
     bottom:-50px;
-    
-    
 }
+@media(max-width:1000px){
+    .bs-product{
+        height: auto;
+    }
+    .bs-product img{
+        height: auto;
+        width: 75%;  
+    }
+}
+
 /* catagory */
 #catagory{
     height: auto;
@@ -214,6 +283,7 @@ section#main{
     display: flex;
     justify-content: space-around;
     height:auto;
+    padding-bottom:5%;
 
 }
 .cat-itm a{
@@ -246,6 +316,7 @@ section#main{
     border: none;
     border-radius: 5px;
     font-weight: 520;
+    cursor: pointer;
 }
 
 .bs-product img{
@@ -274,9 +345,10 @@ h1{
     align-items: first baseline;
 }
 .rev-btm-1{
-    margin: 5% 5%;
+    margin: 5% 3%;
+    min-width: 10%;
     max-width: 20%;
-    padding: 50px 30px;
+    padding: 2% 1%;
     background: #BFA8BB;
     border-radius: 10%;
     
