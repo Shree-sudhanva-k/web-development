@@ -18,6 +18,16 @@ function fetchUserData(email){
     .catch((error) => {
       console.error("Error fetching data:", error);
     });
+    axios
+    .get(`${serverUrl}/orders?email=${email}`)
+    .then((response) => {      
+      const items = response.data;
+      console.log(items)
+      
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
 }
 
 function signOut(){

@@ -12,6 +12,18 @@ export const fetchAccountDetails = (req,res) =>{
     });
   }
 
+  export const fetchOrderDetails = (req,res) =>{    
+    db.query('select * from orders where user_email = ?',[req.query.email], (err, result) => {
+      if (err) {
+        console.error("MySQL query error:", err);
+        res.status(500).send("Error fetching data from database");
+      } else {
+        console.log(result);
+        res.json(result);
+      }
+    });
+  }
+
 export const deleteAccount = (req,res) =>{
   const {email} = req.params;
   console.log(email);
