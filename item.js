@@ -12,13 +12,14 @@ const itemDisplay = () =>{
       const price = document.querySelector('.price');
       const category = document.querySelector('.category');
       const weight = document.querySelector('.weight');
+      const productImage = document.querySelector('.productImage');
 
       name.innerHTML = item.name;
       desc.innerHTML = item.description;
       price.innerHTML = item.price;
       category.innerHTML = item.category;
       weight.innerHTML = item.weight;
-
+      productImage.src = item.photo;
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
@@ -26,3 +27,9 @@ const itemDisplay = () =>{
 }
 
 window.addEventListener("load",itemDisplay());
+
+function handleSearch(){
+  const searchText = document.getElementById('searchText').value;
+  localStorage.setItem('searchText',searchText);
+  window.location.href = 'search.html';
+}
