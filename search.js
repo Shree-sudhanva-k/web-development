@@ -22,9 +22,11 @@ function displayOnSearch(){
         const cardClone = template.content.cloneNode(true);
         const productName = cardClone.querySelector(".name");
         const productPrice = cardClone.querySelector(".price");
+        const productImage = cardClone.querySelector(".productImage")
 
         productName.innerHTML = item.name;
-        productPrice.innerHTML = item.price;        
+        productPrice.innerHTML = item.price;       
+        productImage.src = item.photo; 
 
         cardContainer.appendChild(cardClone);
       });
@@ -38,4 +40,10 @@ function itemDetails(product){
     const name = product.getElementById('pname').innerHTML;
     localStorage.setItem('itemName',name);
     window.location.href = 'item.html';
+}
+
+function handleSearch(){
+  const searchText = document.getElementById('searchText').value;
+  localStorage.setItem('searchText',searchText);
+  window.location.href = 'search.html';
 }
