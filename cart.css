@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(217, 227, 248, 0.521)), url('bg1.jpg');    
+    background-size:cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    font-size: 1rem;
+    width: 100vw;
+} 
+.cartPage{
+    width: 75%;
+    min-height: 100vh;
+    background: #ce808038;
+    margin :5% auto;
+    padding: 75px 40px; 
+    
+}
+.cartItem{
+    display:flex;
+    border: 1px solid black;
+    height: 200px;
+    margin: 30px 50px;
+    padding: 25px 40px;
+    justify-content: space-between;
+    
+
+}
+.cartItem-left{
+    width: 40%;  
+    display: flex;
+    justify-content: space-around;
+}
+.cartItem-left img{
+    height: 80%;
+    align-items: center;
+}
+/* right */
+.cartItem-right{
+    display: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cname{
+    font-size:30px ;
+    font-weight: 550;
+}
+.cprice{
+    font-size: 20px;
+}
+.quantity{
+    display: absolute;
+    height:30px;
+    width: 90px;
+    background-color: rgba(102, 255, 0, 0.877);
+    color: black;
+    font-size: 1.6em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cquantity{
+    font-size: 0.9em;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+
+}
+.ctotal{
+    font-size: 1.5em;
+    font-weight: 525;
+}
+.placeOrder{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}

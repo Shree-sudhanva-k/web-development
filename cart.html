@@ -4,11 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
   </head>
   <body>
     <div class="cartPage">
-      <div class="cart"></div>
-      <div class="totalPrice"></div>
+      <div class="cart">
+        <div class="cartItem">
+          <div class="cartItem-left">
+            <img src="mixveg.png" alt="">
+            <div class="cartItem-right">
+              <div class="cname">Name</div>
+              <div class="cprice">300</div>
+              <div class="ctotal">1000</div>          
+              
+            </div> 
+          </div>
+          
+          <div class="quantity">
+            <div class="subtract" onclick="decrement(this)">-</div>
+            <div class="cquantity">1</div>
+            <div class="add" onclick="increment(this)">+</div>
+          </div>
+        </div>
+      </div>
+      <div class="totalPrice">5000</div>
       <button class="placeOrder" onclick="placeOrder()">
         Place Order (COD)
       </button>
