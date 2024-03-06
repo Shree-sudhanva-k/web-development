@@ -11,9 +11,9 @@
 #pf{
     width: 100vw;
     height:100vh;
-    background: url('https://media.istockphoto.com/id/1209729476/vector/dark-pattern-with-exotic-leaves.jpg?s=612x612&w=0&k=20&c=lxahoTZTEds5v0Q3p3jb8yCMD_zH21gzOOwOuES_1_E=');
-    padding: 5%;
+    background: url("logic\ bg\ pic.jpeg");   
     line-height: 2em;
+    background-size: cover;
     
     
 }
@@ -42,7 +42,7 @@
 #pf h1{
     text-align: center;
     margin-bottom: 7%;
-    color: rgb(238, 238, 138);
+    color: rgb(231, 231, 226);
     font-size: 50px;
 }
 #pf input {
