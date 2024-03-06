@@ -15,14 +15,16 @@
     </div>
     <div class="noItems" style="display: none">No Items in cart</div>
     <template class="template">
-      <div class="cname"></div>
-      <div class="cprice"></div>
-      <div class="quantity">
-        <div class="subtract" onclick="decrement(event,this)"></div>
-        <div class="cquantity"></div>
-        <div class="add" onclick="increment(event,this)"></div>
+      <div class="cartItem">
+        <div class="cname"></div>
+        <div class="cprice"></div>
+        <div class="quantity">
+          <div class="subtract" onclick="decrement(this)">-</div>
+          <div class="cquantity"></div>
+          <div class="add" onclick="increment(this)">+</div>
+        </div>
+        <div class="ctotal"></div>
       </div>
-      <div class="ctotal"></div>
     </template>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="cart.js"></script>

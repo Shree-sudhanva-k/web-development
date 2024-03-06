@@ -79,10 +79,12 @@ function placeOrder() {
     .catch((error) => {
       console.log(error);
     });
+    location.reload();
 }
 
 function increment(item){  
   const itemCard = item.parentNode.parentNode;
+  console.log(itemCard)
   const productName = itemCard.querySelector('.cname').innerHTML;
   const email = localStorage.getItem('email');
   axios
@@ -96,13 +98,40 @@ function increment(item){
     .catch((error) => {
       console.log(error);
     });
-
+    location.reload();
 }
 
 function decrement(item){  
   const itemCard = item.parentNode.parentNode;
-  const quantity = itemCard.querySelector('.quantity').innerHTML;
-  if(quantity > 1){
-    itemCard.querySelector('.quantity').innerHTML = parseInt(quantity)-1;
+  const quantity = itemCard.querySelector('.cquantity').innerHTML;
+  const productName = itemCard.querySelector('.cname').innerHTML;
+  const email = localStorage.getItem('email');
+  console.log(quantity)
+  if(quantity == 1){
+    axios
+    .post(`${serverUrl}/deleteItem`, {
+      email,
+      productName,
+    })
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   }
+  else{
+    axios
+    .post(`${serverUrl}/decrementQuantity`, {
+      email,
+      productName,
+    })
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
+  location.reload();
 }

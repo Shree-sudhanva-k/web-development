@@ -35,12 +35,21 @@
       <h2 id="p-name">Name</h2>
       <span id="email"></span>
       <div class="orders">
-        <h3>Orders:</h3>
-        <div class="order-ls">No orders yet</div>
+        <h3>Pending Orders:</h3>
+        <div class="order-ls"></div>
+        <h3>Previous Order</h3>
+        <div class="completedOrders"></div>
       </div>
       <button id="signout" onclick="signOut()">Signout</button>
       <button id="dlt" onclick="deleteAccount()">Delete Account</button>
     </section>
+    <template class="template">
+      <div class="orderlist">
+        <div class="orderId"></div>
+        <div class="orderDate"></div>
+        <div class="totalAmount"></div>
+      </div>
+    </template>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script src="account.js"></script>
