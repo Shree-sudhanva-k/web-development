@@ -36,6 +36,25 @@
     height: 100%;
     width: 60%;
     background: rgb(247, 185, 185);
-    text-align: center;
-    
+    padding: 50px;
 }
+.info{
+    padding: 10px;
+}
+.info1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.info2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.info3{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.info1
