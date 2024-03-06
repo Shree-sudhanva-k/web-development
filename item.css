@@ -11,15 +11,31 @@
     align-items: center;
     justify-content: center;
 }
+.name{
+    font-size: 100px;
+}
+.category{
+    font-size: 30px;
+}
+.desc{
+    font-size: 30px;
+}
+.weight{
+    font-size: 30px;
+}
+.price{
+    font-size: 30px;
+}
 .product-img{
     height: 50%;
     width: 80%;
-    background: black;
+    background: rgb(241, 199, 199);
 
 }
 .p-right{
     height: 100%;
     width: 60%;
-    background: red;
+    background: rgb(247, 185, 185);
+    text-align: center;
     
 }
