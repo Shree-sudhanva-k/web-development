@@ -29,6 +29,15 @@ function postNavigate(){
     window.location.href = 'login.html';
   }
   else{
-    window.location.href = 'inofrm.html';
+    window.location.href = 'inform.html';
+  }
+}
+
+function cartNavigate(){
+  if(localStorage.getItem("email") == ""){
+    window.location.href = 'login.html';
+  }
+  else{
+    window.location.href = 'cart.html';
   }
 }

@@ -40,7 +40,8 @@ function displayOnSearch(){
 }
 
 function itemDetails(product){
-    const name = product.getElementById('pname').innerHTML;
+  console.log(product)
+    const name = product.querySelector('#pname').innerHTML;
     localStorage.setItem('itemName',name);
     window.location.href = 'item.html';
 }

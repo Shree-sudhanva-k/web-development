@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <div class="h-right">
+      <div class="h-left">
         <div class="h-img-div"></div>
       </div>
       <div class="search">
@@ -25,7 +25,8 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
-      <div class="h-left">
+      <div class="h-right">
+        <h3><a href="head.html">Home</a></h3>
         <h3><a href="inform.html">Post</a></h3>
         <h3><a id="account" onclick="accNavigate()">login</a></h3>
         <h3>
@@ -38,7 +39,7 @@
     <div class="product-container"></div>
 
     <template class="template">
-      <div class="token" onclick="itemDetails()">
+      <div class="token" onclick="itemDetails(this)">
         <img
           src="banana.jpg"
           alt="product img"
