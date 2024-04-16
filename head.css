@@ -109,8 +109,8 @@ header .search{
 }
 
 /* main section */
-section#main{
-    width: 100vw;
+#main{
+    width: 100%;
     height: 100vh;
     display: flex;
 }
@@ -130,7 +130,7 @@ section#main{
     justify-content: center;
 }
 .main-right{
-    margin-left: 5%;
+    padding-left: 20px;
     width: 45%;
     height: 100%;
     display: flex;
@@ -140,7 +140,7 @@ section#main{
 }
 .main-right h1{
     font-size: 3em;
-    margin: 5% 0%;
+    
 }
 @media (max-width:1075px){
     section#main{

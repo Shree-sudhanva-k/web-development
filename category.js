@@ -69,6 +69,7 @@ const addItem = (event,item) => {
     .catch((error) => {
       console.log(error)
     });
+    location.reload();
 }
 
 function increment(event,item){

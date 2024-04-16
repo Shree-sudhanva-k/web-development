@@ -7,24 +7,48 @@ export const addItem = (req, res) => {
     req.body.quantity,
     req.body.price,
   ];
-  db.query(
-    "insert into carts(email,productName,quantity,price) values(?)",
-    [values],
-    (err, result) => {
-      if (err) {
-        console.error("MySQL query error:", err);
-        res.status(500).send("Error fetching data from database");
-      } else {
-        console.log(result);
-        res.json(result);
+  db.query("select * from carts where productName = ? and email = ?",[req.body.productName, req.body.email],(err,result) =>{
+    if (err) {
+      console.error("MySQL query error:", err);
+      res.status(500).send("Error fetching data from database");
+    } else {
+      if(result.length == 0){
+        db.query(
+          "insert into carts(email,productName,quantity,price) values(?)",
+          [values],
+          (err, result) => {
+            if (err) {
+              console.error("MySQL query error:", err);
+              res.status(500).send("Error fetching data from database");
+            } else {
+              console.log(result);
+              res.json(result);
+            }
+          }
+        );
+      }else{
+        db.query(
+          "update carts set quantity = quantity + ? where email = ? and productName = ?",
+          [req.body.quantity,req.body.email,req.body.productName],
+          (err, result) => {
+            if (err) {
+              console.error("MySQL query error:", err);
+              res.status(500).send("Error fetching data from database3");
+            } else {
+              console.log(result);
+              res.json(result);
+            }
+          }
+        );
       }
     }
-  );
+  })
+  
 };
 
 export const cartItemsDisplay = (req, res) => {
   db.query(
-    "select * from carts where email = ?",
+    "select p.photo,c.productName,c.quantity,c.price,c.totalPrice from carts c,products p where c.email = ? and c.productName = p.name;",
     [req.query.email],
     (err, result) => {
       if (err) {
