@@ -37,14 +37,18 @@ function login() {
       password,
     })
     .then((response) => {
-      console.log(response.data);
+      console.log(response);
+      if(response.status != 200){
+        document.querySelector(".error").innerHTML = error;
+      }
       localStorage.setItem("name", response.data.user.name);
       localStorage.setItem("email", email);
       localStorage.setItem("role",response.data.user.role);
       window.location.href = "head.html";
     })
     .catch((error) => {
-      document.querySelector(".error").innerHTML = error;
+      console.log(error)
+      document.querySelector(".error").innerHTML = error.response.data.error;
     });
 }
 

@@ -76,6 +76,7 @@ button:hover{
 	transform: translateY(-180px);
 	background-image: url("https://e0.pxfuel.com/wallpapers/761/393/desktop-wallpaper-leaf-background-background-aesthetic-leaf-thumbnail.jpg");
 	
+	
 }
 .login label{
 	color: #f6f6f6;
@@ -91,4 +92,15 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+
+.error{
+	text-align: center;
+	color: rgb(231, 170, 170);
+}
+
+.role{
+	margin:1px 35% ;
+	padding: 10px;
+	border-radius: 10px;
 }

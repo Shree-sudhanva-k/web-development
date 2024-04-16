@@ -16,12 +16,12 @@
 				
 					<label for="chk" aria-hidden="true">Sign up</label>
 					<input type="text" id="sname" name="txt" placeholder="User name" required="">
-					<input type="email" id="semail" name="email" placeholder="Email" required="">
+					<input type="text" id="semail" name="email" placeholder="Email/Phone" required="">
 					<input type="password" id="spassword" name="pswd" placeholder="Password" required="">					
-					<!-- <select class="role">						
+					<select class="role">						
 						<option value="vendor">Vendor</option>
 						<option value="customer">Customer</option>
-					</select> -->
+					</select>
 					<button onclick="signup()">Sign up</button>
 				
 			</div>
@@ -29,9 +29,9 @@
 			<div class="login">
 				
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" id="lemail" name="email" placeholder="Email" required="">
+					<input type="text" id="lemail" name="email" placeholder="Email/Phone" required="">
 					<input type="password" id="lpassword" name="pswd" placeholder="Password" required="">
-					<span class="error"></span>
+					<div class="error"></div>
 					<button onclick="login()">Login</button>
 				
 			</div>

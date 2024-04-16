@@ -24,4 +24,11 @@ function handleSearch(){
     window.location.href = 'search.html';
 }
 
-
+function postNavigate(){
+  if(localStorage.getItem("email") == ""){
+    window.location.href = 'login.html';
+  }
+  else{
+    window.location.href = 'inofrm.html';
+  }
+}

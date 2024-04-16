@@ -119,7 +119,7 @@ section #main{
     padding-top: 50px;
 }
 .token{
-    height: 280px;
+    height: auto;
     width: 200px;
     border: 0.5px solid gray;
     align-items:center ;    
@@ -162,4 +162,22 @@ section #main{
     font-size: 25px;
     padding-left: 50px;
     padding-top: 30px;    
+}
+
+.addQuantity{
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.plus,.minus{
+    background-color: rgb(148, 238, 15);
+    padding: 5px;
+    border-radius: 10px;
+}
+.add{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
 }
