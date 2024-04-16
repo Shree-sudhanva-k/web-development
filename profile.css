@@ -114,3 +114,11 @@ h2{
 #signout{
     margin: 2% auto;
 }
+
+#c-profile button{
+    width:180px;
+    height:30px;
+    border-radius: 10px;
+    font-size: 1.2em;
+
+}
