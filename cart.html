@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="cart.css">
   </head>
   <body>
-    <div class="cartPage">
-      <div class="cart">
+    <!-- <div class="cartPage">
+      <h1>Your Cart  (<span id="total-itm"></span> items)</h1>
+      <div class="cart-head">
+        <div id="h-itm">Item</div>
+        <div>Price</div>
+        <div>Quantity</div>
+        <div>Total</div>
+      </div>
+       <div class="cart">
         <div class="cartItem">
           <div class="cartItem-left">
             <img src="mixveg.png" alt="">
             <div class="cartItem-right">
               <div class="cname">Name</div>
-              <div class="cprice">300</div>
-              <div class="ctotal">1000</div>          
-              
+              <div class="ccatagory">fruit</div>
             </div> 
           </div>
-          
+          <div class="cprice">300</div>
           <div class="quantity">
             <div class="subtract" onclick="decrement(this)">-</div>
             <div class="cquantity">1</div>
             <div class="add" onclick="increment(this)">+</div>
           </div>
+          <div class="ctotal">1000</div> 
         </div>
-      </div>
-      <div class="totalPrice">5000</div>
+      </div> 
+      <div class="gt">Grand total:<span class="totalPrice">5000 </span></div>
       <button class="placeOrder" onclick="placeOrder()">
         Place Order (COD)
       </button>
-    </div>
-    <div class="noItems" style="display: none">No Items in cart</div>
+    </div> -->
+    <div class="noItems" style="display: block">No Items in cart</div>
     <template class="template">
       <div class="cartItem">
         <div class="cname"></div>

@@ -2,6 +2,7 @@ const email = localStorage.getItem("email");
 const serverUrl = "http://localhost:8800";
 let items;
 let totalPrice = 0;
+let totalItem = 0;
 window.addEventListener("load", cartItemsDisplay(email));
 
 function cartItemsDisplay(email) {
@@ -32,9 +33,11 @@ function cartItemsDisplay(email) {
         productTotal.innerHTML = item.totalPrice;
 
         totalPrice += item.totalPrice;
+        totalItem+=1;
 
         cart.appendChild(cardClone);
       });
+      document.querySelector("#total-itm").innerHTML=totalItem;
       document.querySelector(".totalPrice").innerHTML = totalPrice;
     })
     .catch((error) => {
