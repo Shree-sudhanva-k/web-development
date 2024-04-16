@@ -14,11 +14,11 @@ body {
 .cartPage{
     width: 75%;
     min-height: 80vh;
-    background: #ce808038;
-    margin :5% auto;
-    padding: 75px 40px; 
+    /* background-color: rgba(148, 254, 78, 0.179); */
+    margin: 10px auto;
+    padding: 50px 40px; 
     position: relative;
-    
+    border-radius: 20px;
 }
 h1{
     text-align: center;
@@ -26,7 +26,7 @@ h1{
 .cart-head{
     display: flex;
     justify-content:space-between;
-    margin: 30px 50px;
+    
     padding: 25px 40px;
     border-bottom: 1px solid black;
 }
@@ -34,18 +34,23 @@ h1{
     width: 35%;
     text-align: center;
 }
+.cart{
+    margin-bottom: 50px;
+}
 .cartItem{
     display:flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.392);
     height: 150px;
-    margin: 30px 50px;
+    align-items: center;
     padding: 25px 40px;
     justify-content: space-between;
 }
 .cartItem-left{
     width: 40%;  
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
 }
 .cartItem-left img{
     height: 100%;
@@ -69,18 +74,26 @@ h1{
     display: absolute;
     height:30px;
     width: 90px;
-    background-color: rgba(102, 255, 0, 0.877);
+    
     color: black;
     font-size: 1.6em;
-    border-radius: 10px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
+
+.add,.subtract{
+    background-color: rgba(145, 255, 71, 0.877);
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
 .cquantity{
     font-size: 0.9em;
-    background-color: white;
+    background-color: transparent;
     height: 100%;
     width: 50%;
     text-align: center;
@@ -110,8 +123,14 @@ h1{
     font-size: large;
 }
 .noItems{
-  position:absolute;
+  position:fixed;
   top: 50%;
-  right: 50%; 
+  right: 40%; 
   font-size: 2rem;
+}
+
+.cartImage{
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
 }

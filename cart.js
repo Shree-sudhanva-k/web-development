@@ -26,11 +26,13 @@ function cartItemsDisplay(email) {
         const productPrice = cardClone.querySelector(".cprice");
         const productQuantity = cardClone.querySelector(".cquantity");
         const productTotal = cardClone.querySelector(".ctotal");
+        const productImage = cardClone.querySelector(".cartImage")
 
         productName.innerHTML = item.productName;
         productPrice.innerHTML = item.price;
         productQuantity.innerHTML = item.quantity;
         productTotal.innerHTML = item.totalPrice;
+        productImage.src = item.photo;
 
         totalPrice += item.totalPrice;
         totalItem+=1;
@@ -82,7 +84,7 @@ function placeOrder() {
     .catch((error) => {
       console.log(error);
     });
-    location.reload();
+    window.location.href = 'profile.html'
 }
 
 function increment(item){  

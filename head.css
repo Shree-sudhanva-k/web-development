@@ -18,7 +18,7 @@ body {
         background-position: center; 
         background-attachment: fixed;
         font-size: 1rem;
-        width: 100vw;
+        width: 100%;
   } 
 li{
     list-style-type: none;
@@ -30,6 +30,7 @@ li a{
 /*header*/
 header{
     background-color:  rgb(201, 250, 150);
+    width: 100%;
     height: 18vh;
     display: flex;
     justify-content: space-between;
@@ -48,7 +49,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-right: 20px;
     
 }
 .h-right h3 a,.h-left h3 a{
@@ -108,8 +109,8 @@ header .search{
 }
 
 /* main section */
-section#main{
-    width: 100vw;
+#main{
+    width: 100%;
     height: 100vh;
     display: flex;
 }
@@ -129,7 +130,7 @@ section#main{
     justify-content: center;
 }
 .main-right{
-    margin-left: 5%;
+    padding-left: 20px;
     width: 45%;
     height: 100%;
     display: flex;
@@ -139,7 +140,7 @@ section#main{
 }
 .main-right h1{
     font-size: 3em;
-    margin: 5% 0%;
+    
 }
 @media (max-width:1075px){
     section#main{

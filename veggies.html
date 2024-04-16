@@ -26,6 +26,7 @@
         </button>
       </div>
       <div class="h-left">
+        <h3><a href="head.html">Home</a></h3>
         <h3><a href="inform.html">Post</a></h3>
         <h3><a id="account" onclick="accNavigate()">login</a></h3>
         <h3>
@@ -39,12 +40,12 @@
       <div class="token" onclick="itemDetails(this)">
         <img src="" alt="product img" height="180px" width="170" class="productImage"/>
         <h2 id="pname" class="name">banana</h2>
-        <h3 id="amount" class="price">123.50</h3>
+        <span>₹</span><span id="amount" style="font-size: 20px; font-weight: 600;" class="price">123.50</span><span>/kg</span>
         <div class="product-bottom">
           <div class="addQuantity">
-            <span class="-" onclick="decrement(event,this)">-</span>
+            <span class="minus" onclick="decrement(event,this)">-</span>
             <span class="quantity">1</span>
-            <span class="+" onclick="increment(event,this)">+</span>
+            <span class="plus" onclick="increment(event,this)">+</span>
           </div>
           <button class="add" onclick="addItem(event,this)">Add</button>
         </div>

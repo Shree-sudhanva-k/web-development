@@ -24,4 +24,20 @@ function handleSearch(){
     window.location.href = 'search.html';
 }
 
+function postNavigate(){
+  if(localStorage.getItem("email") == ""){
+    window.location.href = 'login.html';
+  }
+  else{
+    window.location.href = 'inform.html';
+  }
+}
 
+function cartNavigate(){
+  if(localStorage.getItem("email") == ""){
+    window.location.href = 'login.html';
+  }
+  else{
+    window.location.href = 'cart.html';
+  }
+}
