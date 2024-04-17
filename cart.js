@@ -61,6 +61,20 @@ function placeOrder() {
       console.log(error);
     });
 
+    items.forEach((item) =>{
+      axios
+    .post(`${serverUrl}/reduceStockQuantity`, {
+      email,
+      item,      
+    })
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+    })
+
   axios
     .post(`${serverUrl}/orderItems`, {
       email,

@@ -126,6 +126,23 @@ export const deleteCart = (req,res) =>{
   );
 }
 
+export const reduceStockQuantity = (req,res) =>{
+  const { email,item } = req.body;
+  db.query(
+    "update products set stock_quantity = stock_quantity - ? where name = ?",
+    [item.quantity,item.productName],
+    (err, result) => {
+      if (err) {
+        console.error("MySQL query error:", err);
+        res.status(500).send("Error fetching data from database3");
+      } else {
+        console.log(result);
+        res.json(result);
+      }
+    }
+  );
+}
+
 export const incrementQuantity = (req,res) => {
   const {email,productName} = req.body;
   db.query(

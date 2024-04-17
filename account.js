@@ -35,7 +35,7 @@ function fetchUserData(email) {
           const orderDate = cardClone.querySelector(".orderDate");
           const totalAmount = cardClone.querySelector(".totalAmount");
           orderId.innerHTML = item.order_id;
-          orderDate.innerHTML = item.order_date;
+          orderDate.innerHTML = item.order_date.substring(0,10);
           totalAmount.innerHTML = item.total_amount;
 
           if (item.status === "Pending") pendingOrders.appendChild(cardClone);

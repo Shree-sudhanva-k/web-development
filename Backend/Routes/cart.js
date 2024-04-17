@@ -1,5 +1,5 @@
 import express from 'express';
-import { addItem, cartItemsDisplay, decrementQuantity, deleteCart, deleteItem, incrementQuantity, orderItems, placeOrder } from '../Controllers/cartController.js';
+import { addItem, cartItemsDisplay, decrementQuantity, deleteCart, deleteItem, incrementQuantity, orderItems, placeOrder, reduceStockQuantity } from '../Controllers/cartController.js';
 
 
 const router= express.Router();
@@ -12,5 +12,6 @@ router.post('/deleteCart',deleteCart);
 router.post('/incrementQuantity',incrementQuantity);
 router.post('/decrementQuantity',decrementQuantity);
 router.post('/deleteItem',deleteItem);
+router.post('/reduceStockQuantity',reduceStockQuantity);
 
 export default router;
