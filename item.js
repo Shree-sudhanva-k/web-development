@@ -1,5 +1,7 @@
 const serverUrl = "http://localhost:8800";
 
+document.querySelector('title').innerHTML = localStorage.getItem('itemName');
+
 const itemDisplay = () =>{
     const itemName = localStorage.getItem('itemName');
     axios

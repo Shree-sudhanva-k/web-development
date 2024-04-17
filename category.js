@@ -1,6 +1,8 @@
 const category = localStorage.getItem("category");
 const serverUrl = "http://localhost:8800";
 
+document.querySelector('title').innerHTML = category;
+
 window.addEventListener("load", productDisplay(category));
 
 function productDisplay(category) {
