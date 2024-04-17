@@ -8,6 +8,7 @@ function productInput() {
   const weight = document.getElementById("p-weight").value;
   const stock_quantity = document.getElementById("p-stock-quant").value;
   const description = document.getElementById("description").value;
+  const email = localStorage.getItem('email');
   axios
     .post(`${serverUrl}/productInput`, {
       name,
@@ -16,7 +17,8 @@ function productInput() {
       weight,
       stock_quantity,
       description,
-      photo
+      photo,
+      email
     })
     .then((response) => {
       console.log(response);      

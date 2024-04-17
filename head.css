@@ -50,7 +50,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-right: 20px;
-    
+    cursor: pointer;
 }
 .h-right h3 a,.h-left h3 a{
     margin:  15px;
@@ -89,7 +89,7 @@ header .search{
 
 .h-left{
     display: flex;
-    
+    cursor: pointer;
 }
 @media (max-width:1075px){
     

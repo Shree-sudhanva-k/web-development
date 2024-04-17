@@ -126,6 +126,7 @@ section #main {
 }
 .token img {
   align-items: center;
+  border-radius: 10px;
 }
 .token h3 {
   bottom: 10px;

@@ -10,15 +10,16 @@ const itemDisplay = () =>{
       const name = document.querySelector('.name');
       const desc = document.querySelector('.desc');      
       const price = document.querySelector('.price');
-      const category = document.querySelector('.category');
-      const weight = document.querySelector('.weight');
+      const category = document.querySelector('.category');      
       const productImage = document.querySelector('.productImage');
+      const email = document.querySelector('.by');
 
       name.innerHTML = item.name;
       desc.innerHTML = item.description;
       price.innerHTML = item.price;
       category.innerHTML = item.category;     
       productImage.src = item.photo;
+      email.innerHTML = item.email;
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
