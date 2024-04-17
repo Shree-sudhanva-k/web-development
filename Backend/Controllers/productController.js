@@ -5,8 +5,8 @@ export const productInput = (req, res) => {
     req.body;
 
   db.query(
-    "insert into products (name, description, category, price, stock_quantity, weight,photo,email) values(?,?,?,?,?,?,?,?)",
-    [name, description, category, price, stock_quantity, weight,photo,email],
+    "insert into products (name, description, category, price, stock_quantity,photo,email) values(?,?,?,?,?,?,?)",
+    [name, description, category, price, stock_quantity,photo,email],
     (err, data) => {
       if (err) return res.json(err);
       console.log("Successful");

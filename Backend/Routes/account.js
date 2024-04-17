@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.get('/account',fetchAccountDetails);
 router.get('/orders',fetchOrderDetails);
+router.get('/vendorProducts/:email',fetchOrderDetails);
 router.delete('/account/:email',deleteAccount);
 
 export default router;

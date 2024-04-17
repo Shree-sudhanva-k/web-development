@@ -41,6 +41,7 @@
         <h3>Previous Orders:</h3>
         <div class="completedOrders"></div>
       </div>
+      <div class="products"></div>
       <div class="buttons">
         <button id="signout" onclick="signOut()">Signout</button>
         <button id="dlt" onclick="deleteAccount()">Delete Account</button>
@@ -51,6 +52,25 @@
         <div class="orderId"></div>
         <div class="orderDate"></div>
         <div class="totalAmount"></div>
+      </div>
+    </template>
+    <template class="box product">
+      <div class="token" onclick="itemDetails(this)">
+        <img
+          src=""
+          alt="product img"
+          height="180px"
+          width="170"
+          class="productImage"
+        />
+        <h2 id="pname" class="name">banana</h2>
+        <span>₹</span
+        ><span
+          id="amount"
+          style="font-size: 20px; font-weight: 600"
+          class="price"
+          >123.50</span
+        ><span>/kg</span>
       </div>
     </template>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

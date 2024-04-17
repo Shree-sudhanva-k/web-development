@@ -4,8 +4,7 @@ let photo = '';
 function productInput() {
   const name = document.getElementById("pname").value;
   const category = document.getElementById("pcatg").value;
-  const price = document.getElementById("pprice").value;
-  const weight = document.getElementById("p-weight").value;
+  const price = document.getElementById("pprice").value;  
   const stock_quantity = document.getElementById("p-stock-quant").value;
   const description = document.getElementById("description").value;
   const email = localStorage.getItem('email');
@@ -13,8 +12,7 @@ function productInput() {
     .post(`${serverUrl}/productInput`, {
       name,
       category,
-      price,
-      weight,
+      price,      
       stock_quantity,
       description,
       photo,
@@ -22,7 +20,7 @@ function productInput() {
     })
     .then((response) => {
       console.log(response);      
-      window.location.href = "head.html";
+      // window.location.href = "head.html";
     })
     .catch((error) => {
       document.querySelector(".error").innerHTML = error;

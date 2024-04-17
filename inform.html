@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upload!</title>
-  <link rel="stylesheet" href="inform.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload!</title>
+    <link rel="stylesheet" href="inform.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- profile form -->
+    <section id="pf">
+      <h1>Upload your product here!</h1>
+      <div class="pf-btm">
+        <div class="pf-left">
+          <label for="pic1" id="file"><i class="fa-solid fa-plus"></i></label>
+          <input
+            type="file"
+            accept="image/*"
+            id="pic1"
+            onchange="handleFileInputChange(event)"
+          />
+        </div>
+        <div class="pf-right">
+          <input type="text" id="pname" placeholder="product name" />
 
-</head>
-<body>
-  
-  <!-- profile form -->
-  <section id="pf">
-    <h1>Upload your product here!</h1>
-    <div class="pf-btm">
-      <div class="pf-left">
-        <label for="pic1" id="file"><i class="fa-solid fa-plus"></i></label>
-        <input type="file" accept="image/*" id="pic1" onchange="handleFileInputChange(event)">
+          <input type="text" id="pcatg" placeholder="category" />
+
+          <input type="number" id="pprice" placeholder="price/kg" />
+
+          <input
+            type="number"
+            id="p-stock-quant"
+            placeholder="available stock"
+          />
+
+          <textarea
+            name="description"
+            id="description"
+            cols="10"
+            rows="10"
+            placeholder="product description "
+          ></textarea>
+
+          <button onclick="productInput()">Add Product</button>
+        </div>
       </div>
-      <div class="pf-right">
-        
-        <input type="text" id="pname" placeholder="product name">
-        
-        
-        <input type="text" id="pcatg" placeholder="category">
-        
-        
-        <input type="number" id="pprice" placeholder="price">
-        
-        
-        <input type="number" id="p-weight" placeholder="Weight">
-        
-        
-        <input type="number" id="p-stock-quant" placeholder="available stock">
-        
-        <textarea name="description" id="description" cols="10" rows="10" placeholder="product description "></textarea>
-  
-        <button onclick="productInput()">Add Product</button>
-      </div>
-    </div>
-    
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="inform.js"></script>  
-</body>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="inform.js"></script>
+  </body>
 </html>

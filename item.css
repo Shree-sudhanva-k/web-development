@@ -76,6 +76,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .addQuantity{
     display: flex;
@@ -83,6 +84,7 @@
     justify-content: flex-start;
     gap: 10px;
     font-size: 20px;
+   
 }
 
 .plus,.minus{

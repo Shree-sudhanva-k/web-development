@@ -35,7 +35,7 @@ function fetchUserData(email) {
           const orderDate = cardClone.querySelector(".orderDate");
           const totalAmount = cardClone.querySelector(".totalAmount");
           orderId.innerHTML = item.order_id;
-          orderDate.innerHTML = item.order_date.substring(0,10);
+          orderDate.innerHTML = item.order_date.substring(0, 10);
           totalAmount.innerHTML = item.total_amount;
 
           if (item.status === "Pending") pendingOrders.appendChild(cardClone);
@@ -46,6 +46,33 @@ function fetchUserData(email) {
     .catch((error) => {
       console.error("Error fetching data:", error);
     });
+
+  if (localStorage.getItem("role") === "Vendor") {
+    const cardContainer = document.querySelector('.products');
+    const template = document.querySelector('.product');
+    axios
+      .get(`${serverUrl}/vendorProducts?email=${email}`)
+      .then((response) => {
+        const items = response.data;
+        console.log(items);
+        items.forEach((item) => {
+          console.log(template);
+          const cardClone = template.content.cloneNode(true);
+          const productName = cardClone.querySelector(".name");
+          const productDesc = cardClone.querySelector(".price");
+          const productImage = cardClone.querySelector(".productImage");
+  
+          productName.innerHTML = item.name;
+          productDesc.innerHTML = item.price;  
+          productImage.src = item.photo;      
+  
+          cardContainer.appendChild(cardClone);
+        });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }
 }
 
 function signOut() {

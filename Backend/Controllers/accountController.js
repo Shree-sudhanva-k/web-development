@@ -37,3 +37,15 @@ export const deleteAccount = (req,res) =>{
     }
   })
 }
+
+export const vendorProducts = (req,res) =>{    
+  db.query('select * from products where email = ?',[req.query.email], (err, result) => {
+    if (err) {
+      console.error("MySQL query error:", err);
+      res.status(500).send("Error fetching data from database");
+    } else {
+      console.log(result);
+      res.json(result);
+    }
+  });
+}
